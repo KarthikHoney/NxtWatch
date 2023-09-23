@@ -12,8 +12,8 @@ import HomeVideoCard from '../HomeVideoCard'
 import ThemeAndVideo from '../../context/ThemeAndVideoContext'
 
 const HomeVideo = props => {
-  const {homeVideo, onRetry} = props
-  const videosCount = homeVideo.length
+  const {homeVideos, onRetry} = props
+  const videosCount = homeVideos.length
 
   const onClickingRetry = () => {
     onRetry()
@@ -28,8 +28,8 @@ const HomeVideo = props => {
 
         return videosCount > 0 ? (
           <UnOrderList>
-            {homeVideo.map(eachVideo => (
-              <HomeVideoCard video={eachVideo} key={eachVideo.id} />
+            {homeVideos.map(eachVideo => (
+              <HomeVideoCard videos={eachVideo} key={eachVideo.id} />
             ))}
           </UnOrderList>
         ) : (

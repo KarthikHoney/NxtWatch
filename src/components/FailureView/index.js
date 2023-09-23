@@ -28,7 +28,7 @@ const Failure = props => {
 
         return (
           <FailureView>
-            <FailureImage src={FailurePic} alt="failure-view" />
+            <FailureImage src={FailurePic} alt="failure view" />
             <FailureHeading headingColor={failureHeadColor}>
               Oops! Something Went Wrong
             </FailureHeading>

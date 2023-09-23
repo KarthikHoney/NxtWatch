@@ -13,8 +13,6 @@ import ThemeAndVideoContext from './context/ThemeAndVideoContext'
 
 import './App.css'
 
-// Replace your code here
-
 class App extends Component {
   state = {
     savedVideos: [],

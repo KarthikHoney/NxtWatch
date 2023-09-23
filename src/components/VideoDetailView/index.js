@@ -47,7 +47,6 @@ class VideoDetailView extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-    // console.log(id)
     const jwtToken = Cookies.get('jwt_token')
 
     const url = `https://apis.ccbp.in/videos/${id}`
